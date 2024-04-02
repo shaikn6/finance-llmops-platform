@@ -1,0 +1,31 @@
+# Core ML / embeddings
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4
+
+# LLM (mock mode works without API key)
+openai>=1.0.0,<2.0.0
+
+# LangChain (RAG utilities)
+langchain>=0.1.0,<0.2.0
+langchain-community>=0.0.10
+
+# LLM monitoring
+evidently==0.4.16
+
+# Experiment tracking
+mlflow==2.9.2
+
+# Dashboard
+streamlit==1.29.0
+plotly==5.18.0
+
+# Data
+pandas==2.0.3
+numpy>=1.24.0,<2.0.0
+
+# Testing
+pytest==7.4.4
+pytest-cov==4.1.0
+
+# Utilities
+python-dotenv>=1.0.0

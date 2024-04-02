@@ -1,0 +1,65 @@
+MERIDIAN FINANCIAL CORP — Q4 2023 EARNINGS CONFERENCE CALL
+January 18, 2024 | 8:00 AM Eastern Time
+Transcript — For Reference Only, Not for Distribution
+
+Participants:
+  James R. Calloway — President and Chief Executive Officer
+  Sandra K. Whitmore — Executive Vice President and Chief Financial Officer
+  Michael T. Brennan — Executive Vice President, Commercial Banking
+  [Analysts from Goldman Sachs, Morgan Stanley, Wells Fargo Securities, KBW]
+
+================================================================================
+EXCERPT 1: CEO OPENING REMARKS
+================================================================================
+
+JAMES R. CALLOWAY (CEO): Good morning, and thank you for joining Meridian Financial Corp's fourth quarter 2023 earnings call. Before I turn it over to Sandra for the financial details, I want to step back and frame what 2023 meant for this institution.
+
+We entered the year with two competing pressures: a rapidly rising rate environment that compressed deposit costs faster than we initially modeled, and a credit normalization cycle that we knew was coming but had to manage carefully. I'm proud to say our team navigated both with discipline.
+
+Full-year net income attributable to common shareholders was $847 million, or $6.32 per diluted share, compared to $793 million, or $5.91 per diluted share, in 2022. That's a 7.8% increase in EPS on an already strong prior year base. Return on average tangible common equity was 14.3%, above our long-term target of 13% to 14%.
+
+What I want to highlight specifically is the Commercial Banking segment. We grew C&I outstandings by 9.4% on an average basis, with particular strength in our healthcare services vertical, which now accounts for $4.1 billion in commitments — up from $3.2 billion twelve months ago. That vertical is performing exceptionally well on a credit quality basis, with a criticized asset ratio of just 0.8% compared to our total portfolio criticized asset ratio of 3.2%.
+
+On the deposit side, I want to be transparent about what we saw. We experienced $1.4 billion in deposit outflows in the first quarter — the bulk of that related to rate-sensitive commercial customers moving funds into Treasury money market vehicles. By the second quarter, flows had stabilized. By the fourth quarter, we actually saw net inflows of $620 million, and we exited the year with total deposits of $24.6 billion, essentially flat to year-end 2022's $24.8 billion. That's a story I'm proud of.
+
+Looking ahead to 2024, I am cautiously optimistic. We are not counting on more than two rate cuts, and our NII guidance is built conservatively. We are investing deliberately in AI-assisted credit underwriting tools and our document intelligence platform, which I expect will become a meaningful efficiency driver beginning in the second half of 2024. Sandra will now walk you through the segment details.
+
+================================================================================
+EXCERPT 2: CFO Q&A ON NET INTEREST MARGIN
+================================================================================
+
+ANALYST (KBW — David Featherstone): Sandra, thank you for the detailed NII walk. I want to push a bit on the margin trajectory. You guided to NIM of 3.40% to 3.55% for full-year 2024. Can you help us understand the cadence — is the first quarter going to be the trough, and can you give us your deposit beta assumptions embedded in that guidance?
+
+SANDRA K. WHITMORE (CFO): David, great question, and I'll give you as much transparency as I can. So the first thing to note is our Q4 2023 NIM came in at 3.41% on a reported basis, which includes purchase accounting accretion of $9 million. Excluding that accretion, the core NIM was 3.38%. That is effectively our starting point for 2024 guidance.
+
+On deposit betas: we've modeled a cumulative deposit beta on interest-bearing deposits of 52% through the rate cycle, which is where we came out on the way up. On the way down — meaning if we get the two 25-basis-point cuts we're assuming — we're modeling a lagged deposit repricing benefit. Our experience suggests the first cut will have minimal benefit in the same quarter, with the bulk materializing 60 to 90 days later. So yes, Q1 2024 is likely to be the seasonal and rate-environment trough for NIM, and we'd expect to see sequential improvement starting in Q2.
+
+The other factor is loan repricing. We have $6.2 billion in floating-rate C&I loans tied to SOFR with floors already breached, so any rate cuts will reduce asset yields on those credits, partially offsetting the deposit cost relief. Our NII sensitivity model suggests a net benefit of $18 million per 25-basis-point cut under our base case. That's embedded in the guidance.
+
+Now, the wildcard is deposit competition. If the regional bank competitive environment stays as aggressive as it was in Q3 2023 — where we saw six to eight basis point per month increases in promotional CD rates from competitors — our deposit cost trajectory could be stickier than modeled. We think that pressure has abated materially, but I want to flag it as a risk factor. Our 2024 guidance does not assume promotional CD specials above 5.15% for 12-month terms.
+
+ANALYST (Goldman Sachs — Rachel Kim): Sandra, can you comment on the loan-to-deposit ratio and where you're comfortable taking it?
+
+SANDRA K. WHITMORE (CFO): Sure, Rachel. We ended Q4 at 158% loan-to-deposit ratio — wait, I'm sorry, let me get that right. Total loans were $39.2 billion against deposits of $24.6 billion, so the ratio is approximately 159%. I want to be clear: that's loans to total deposits, not loans to core deposits, and our core deposit base is extremely stable. The FHLB borrowings backstop the gap. In terms of where we're comfortable, we'd like to see that ratio migrate toward 150% over the next 18 months, which implies either deposit growth outpacing loan growth, selective loan portfolio optimization, or some combination. We're not going to grow loans at any cost just to hit volume targets.
+
+================================================================================
+EXCERPT 3: ANALYST QUESTION ON 2024 GUIDANCE
+================================================================================
+
+ANALYST (Morgan Stanley — Thomas Beaumont): James, I want to ask about the AI investment you mentioned in your opening remarks — the document intelligence platform. Can you give us a sense of the economics? What's the capital outlay, what's the expected payback, and is this a build-versus-buy situation?
+
+JAMES R. CALLOWAY (CEO): Tom, I appreciate the question because it's something we think about a lot. I'll give you a couple of data points and then be clear about where we're still in early innings.
+
+We have roughly 40 financial analysts across our credit underwriting, compliance, and investor relations functions whose primary workflow involves extracting and synthesizing information from regulatory filings — 10-Ks, 10-Qs, proxy statements, earnings transcripts, borrower financial statements. An experienced analyst spends anywhere from 3.5 to 5 hours on a single 10-K filing to produce what I'd call a credit signal summary — the key risk factors, the liquidity metrics, the covenant compliance indicators. Multiply that by the volume of filings we review annually — call it 600 to 800 filings — and you're looking at somewhere between 210,000 and 400,000 analyst-hours per year in aggregate across the industry. That's the problem we're solving.
+
+Our internal platform, which we've been piloting since September 2023, processes a 10-K and generates a structured risk summary with cited source passages in approximately 8 to 12 minutes. The accuracy rate — meaning the fraction of key risk indicators correctly identified with supporting evidence — was 94.7% in our Q4 evaluation against a gold-standard analyst benchmark set. We are not releasing this externally — this is for internal credit workflow use only.
+
+Capital outlay in fiscal year 2023 was approximately $4.2 million, comprising infrastructure, model licensing, and 11 FTE in our new AI engineering team. We expect to invest an additional $6.8 million in 2024. The payback calculation is not straightforward because we're not reducing headcount — we're redeploying analyst time toward higher-value judgment-intensive tasks. But if we model it conservatively as 2 hours of analyst time saved per filing at a fully-loaded cost of $180 per analyst-hour across 700 annual filings, that's $252,000 in annual productivity value, which sounds modest. The real value is in analyst quality and throughput — when we can review twice as many borrower filings in the same time, we catch credit deterioration signals earlier. That has a risk-adjusted NPV that is much harder to quantify but is the primary reason we made the investment.
+
+ANALYST (Wells Fargo — Patricia Nguyen): Follow-up on that — are you concerned about hallucination risk? Regulators have been asking hard questions about AI outputs in credit decisions.
+
+JAMES R. CALLOWAY (CEO): Patricia, that's exactly the right question, and frankly it's the question that almost killed this project in its early stages. Our compliance and legal teams would not approve any AI-assisted workflow that produced unverified factual claims in a credit context. So the first thing we built — before we built anything else — was a citation and grounding layer. Every factual claim the system produces has to be traceable to a specific sentence in the source document. If the model produces a number or a percentage that doesn't appear in the cited passage, the system flags it as ungrounded and routes it to an analyst for manual review. We track a grounding score per output, and anything below 85% grounded goes to human review. We have had zero regulatory findings related to this platform, and we disclosed the pilot to our primary regulator, the OCC, in our Q3 supervisory cycle. They characterized our control framework as a model for responsible AI deployment in credit risk workflows.
+
+END OF TRANSCRIPT EXCERPT
+Meridian Financial Corp — Investor Relations
+ir@meridianfinancial.example.com | +1 (614) 555-0142

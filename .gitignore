@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# FAISS index (large binary — regenerated at startup)
+data/faiss_index/
+
+# Monitoring logs (runtime data)
+data/monitoring/
+
+# Experiment outputs (runtime data)
+data/experiments/
+
+# MLflow runs
+mlruns/
+
+# Environment
+.env
+.env.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter (not used but just in case)
+*.ipynb_checkpoints/
