@@ -1,3 +1,8 @@
+> 🔒 **Private Repository** — Source code available on request for verified employers and collaborators.
+> 📧 Contact: shaikn6@udayton.edu | [LinkedIn](https://linkedin.com/in/nagizaazshaik)
+
+---
+
 # Finance LLMOps Platform
 
 [![CI](https://github.com/shaikn6/finance-llmops-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/shaikn6/finance-llmops-platform/actions/workflows/ci.yml)
@@ -9,6 +14,14 @@
 > Production-grade RAG pipeline for financial document intelligence: SEC 10-K filings + earnings call transcripts with citation-grounded answers, hallucination detection, Evidently AI monitoring, and MLflow prompt versioning.
 
 ---
+
+
+## Screenshots
+
+![Architecture](docs/screenshots/architecture.png)
+![Grounding Monitor](docs/screenshots/grounding_monitor.png)
+![Prompt Comparison](docs/screenshots/prompt_comparison.png)
+
 
 ## STAR — Project Background
 
