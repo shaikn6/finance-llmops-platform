@@ -1,6 +1,3 @@
-> 🔒 **Private Repository** — Source code available on request for verified employers and collaborators.
-> 📧 Contact: shaikn6@udayton.edu | [LinkedIn](https://linkedin.com/in/nagizaazshaik)
-
 ---
 
 # Finance LLMOps Platform
