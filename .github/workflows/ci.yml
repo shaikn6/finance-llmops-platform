@@ -38,9 +38,11 @@ jobs:
         run: |
           pytest tests/ \
             --cov=pipeline \
+            --cov=agents \
             --cov=experiments \
             --cov-report=term-missing \
             --cov-report=xml \
+            --cov-fail-under=95 \
             -v \
             --tb=short
 
