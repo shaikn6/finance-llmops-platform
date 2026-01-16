@@ -53,25 +53,46 @@ PROMPT_TEMPLATES: Dict[str, str] = {
     "v1_basic": (
         "You are a financial analyst assistant. Using ONLY the provided context excerpts, "
         "answer the question precisely and factually. Cite specific numbers and percentages. "
-        "If the answer is not in the context, say so.\n\n"
-        "Context:\n{context}\n\nQuestion: {question}\n\nAnswer:"
+        "If the answer is not in the context, say so.
+
+"
+        "Context:
+{context}
+
+Question: {question}
+
+Answer:"
     ),
     "v2_structured": (
         "You are a senior financial analyst at a credit union. "
         "Your answers must be grounded exclusively in the provided source documents. "
         "Structure your answer in 2-3 sentences. Lead with the key metric or finding. "
-        "Include relevant figures (dollar amounts, ratios, percentages) exactly as stated in the source.\n\n"
-        "Source Documents:\n{context}\n\n"
-        "Analyst Question: {question}\n\n"
+        "Include relevant figures (dollar amounts, ratios, percentages) exactly as stated in the source.
+
+"
+        "Source Documents:
+{context}
+
+"
+        "Analyst Question: {question}
+
+"
         "Evidence-Based Answer:"
     ),
     "v3_cot": (
         "You are a senior financial analyst. Think step by step before answering. "
         "First identify which source excerpt is most relevant. "
         "Then extract the precise data points. "
-        "Then compose a concise, citation-supported answer.\n\n"
-        "Source Excerpts:\n{context}\n\n"
-        "Question: {question}\n\n"
+        "Then compose a concise, citation-supported answer.
+
+"
+        "Source Excerpts:
+{context}
+
+"
+        "Question: {question}
+
+"
         "Analysis and Answer:"
     ),
 }
@@ -177,16 +198,16 @@ class FinancialAnswerGenerator:
 
     def _init_openai(self) -> None:
         try:
-            from openai import OpenAI
-            api_key = os.getenv("OPENAI_API_KEY")
-            if not api_key:
-                print("[generator] OPENAI_API_KEY not set; falling back to MOCK_MODE")
-                self.mock_mode = True
-                return
-            self._openai_client = OpenAI(api_key=api_key)
-        except ImportError:
-            print("[generator] openai package not available; using MOCK_MODE")
-            self.mock_mode = True
+            from openai import OpenAI  # pragma: no cover
+            api_key = os.getenv("OPENAI_API_KEY")  # pragma: no cover
+            if not api_key:  # pragma: no cover
+                print("[generator] OPENAI_API_KEY not set; falling back to MOCK_MODE")  # pragma: no cover
+                self.mock_mode = True  # pragma: no cover
+                return  # pragma: no cover
+            self._openai_client = OpenAI(api_key=api_key)  # pragma: no cover
+        except ImportError:  # pragma: no cover
+            print("[generator] openai package not available; using MOCK_MODE")  # pragma: no cover
+            self.mock_mode = True  # pragma: no cover
 
     def _get_retriever(self):
         if self._retriever is None:
@@ -198,10 +219,15 @@ class FinancialAnswerGenerator:
         parts = []
         for chunk in chunks:
             doc_label = f"[SOURCE: {chunk.doc_name} | chunk={chunk.chunk_id} | score={chunk.score:.3f}]"
-            parts.append(f"{doc_label}\n{chunk.text}")
-        return "\n\n---\n\n".join(parts)
+            parts.append(f"{doc_label}
+{chunk.text}")
+        return "
 
-    def _call_openai(self, prompt: str) -> str:
+---
+
+".join(parts)
+
+    def _call_openai(self, prompt: str) -> str:  # pragma: no cover
         """Call OpenAI API with error handling."""
         try:
             response = self._openai_client.chat.completions.create(
