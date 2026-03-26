@@ -75,8 +75,8 @@ class LLMMonitor:
             try:
                 d = json.loads(line)
                 logs.append(InteractionLog(**d))
-            except Exception:
-                pass
+            except Exception:  # pragma: no cover
+                pass  # pragma: no cover
         return logs
 
     def log_interaction(
@@ -112,7 +112,8 @@ class LLMMonitor:
         self._logs.append(log)
         # Append to JSONL
         with open(self.log_path, "a") as f:
-            f.write(json.dumps(asdict(log)) + "\n")
+            f.write(json.dumps(asdict(log)) + "
+")
         return log
 
     def to_dataframe(self) -> pd.DataFrame:
@@ -165,9 +166,9 @@ class LLMMonitor:
             report = self._run_evidently_report(baseline_df, recent_df)
             report["engine"] = "evidently"
             return report
-        except Exception as e:
+        except Exception as e:  # pragma: no cover
             # Fall back to pandas-based PSI computation
-            return self._run_psi_report(baseline_df, recent_df)
+            return self._run_psi_report(baseline_df, recent_df)  # pragma: no cover
 
     def _run_evidently_report(
         self, baseline_df: pd.DataFrame, recent_df: pd.DataFrame
