@@ -112,8 +112,7 @@ class LLMMonitor:
         self._logs.append(log)
         # Append to JSONL
         with open(self.log_path, "a") as f:
-            f.write(json.dumps(asdict(log)) + "
-")
+            f.write(json.dumps(asdict(log)) + "\n")
         return log
 
     def to_dataframe(self) -> pd.DataFrame:
