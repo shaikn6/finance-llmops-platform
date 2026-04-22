@@ -355,23 +355,17 @@ class SynthesizerAgent:
         parts = [base_answer]
 
         if cross_notes and "cross-referencing" in cross_notes.lower():
-            parts.append(f"
-
-[Analyst verification: {cross_notes}]")
+            parts.append(f"\n\n[Analyst verification: {cross_notes}]")
 
         if flagged:
             parts.append(
-                f"
-
-[Fact-check alert: {len(flagged)} claim(s) not fully grounded "
+                f"\n\n[Fact-check alert: {len(flagged)} claim(s) not fully grounded "
                 f"in source documents — {', '.join(flagged[:2])}{'...' if len(flagged) > 2 else ''}. "
                 f"Overall grounding score: {grounding:.0%}.]"
             )
         else:
             parts.append(
-                f"
-
-[Fact-check passed: grounding score {grounding:.0%}, "
+                f"\n\n[Fact-check passed: grounding score {grounding:.0%}, "
                 f"all claims verified against source documents.]"
             )
 
@@ -509,9 +503,6 @@ if __name__ == "__main__":
     print(f"Cross-reference notes: {state['cross_reference_notes']}")
     print(f"Grounding score: {state['grounding_score']:.0%}")
     print(f"Flagged claims: {state['flagged_claims']}")
-    print(f"
-Final answer:
-{state['final_answer']}")
-    print(f"
-Total latency: {state['total_latency_ms']:.0f}ms")
+    print(f"\nFinal answer:\n{state['final_answer']}")
+    print(f"\nTotal latency: {state['total_latency_ms']:.0f}ms")
     print(f"Agent timings: {json.dumps(result.agent_timings, indent=2)}")
