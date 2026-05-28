@@ -53,46 +53,25 @@ PROMPT_TEMPLATES: Dict[str, str] = {
     "v1_basic": (
         "You are a financial analyst assistant. Using ONLY the provided context excerpts, "
         "answer the question precisely and factually. Cite specific numbers and percentages. "
-        "If the answer is not in the context, say so.
-
-"
-        "Context:
-{context}
-
-Question: {question}
-
-Answer:"
+        "If the answer is not in the context, say so.\n\n"
+        "Context:\n{context}\n\nQuestion: {question}\n\nAnswer:"
     ),
     "v2_structured": (
         "You are a senior financial analyst at a credit union. "
         "Your answers must be grounded exclusively in the provided source documents. "
         "Structure your answer in 2-3 sentences. Lead with the key metric or finding. "
-        "Include relevant figures (dollar amounts, ratios, percentages) exactly as stated in the source.
-
-"
-        "Source Documents:
-{context}
-
-"
-        "Analyst Question: {question}
-
-"
+        "Include relevant figures (dollar amounts, ratios, percentages) exactly as stated in the source.\n\n"
+        "Source Documents:\n{context}\n\n"
+        "Analyst Question: {question}\n\n"
         "Evidence-Based Answer:"
     ),
     "v3_cot": (
         "You are a senior financial analyst. Think step by step before answering. "
         "First identify which source excerpt is most relevant. "
         "Then extract the precise data points. "
-        "Then compose a concise, citation-supported answer.
-
-"
-        "Source Excerpts:
-{context}
-
-"
-        "Question: {question}
-
-"
+        "Then compose a concise, citation-supported answer.\n\n"
+        "Source Excerpts:\n{context}\n\n"
+        "Question: {question}\n\n"
         "Analysis and Answer:"
     ),
 }
@@ -219,13 +198,8 @@ class FinancialAnswerGenerator:
         parts = []
         for chunk in chunks:
             doc_label = f"[SOURCE: {chunk.doc_name} | chunk={chunk.chunk_id} | score={chunk.score:.3f}]"
-            parts.append(f"{doc_label}
-{chunk.text}")
-        return "
-
----
-
-".join(parts)
+            parts.append(f"{doc_label}\n{chunk.text}")
+        return "\n\n---\n\n".join(parts)
 
     def _call_openai(self, prompt: str) -> str:  # pragma: no cover
         """Call OpenAI API with error handling."""
