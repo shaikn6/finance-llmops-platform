@@ -13,7 +13,7 @@ langchain-community>=0.0.10
 evidently==0.4.16
 
 # Experiment tracking
-mlflow==2.9.2
+mlflow==3.11.1
 
 # Dashboard
 streamlit==1.29.0
