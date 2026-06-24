@@ -16,7 +16,7 @@ evidently==0.4.16
 mlflow==3.11.1
 
 # Dashboard
-streamlit==1.29.0
+streamlit==1.54.0
 plotly==5.18.0
 
 # Data
