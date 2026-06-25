@@ -230,4 +230,4 @@ Versions reflect `requirements.txt`.
 
 MIT — see LICENSE for details.
 
-Built as part of the financial AI infrastructure portfolio at a financial-services organization, 2024.
+Built as part of a personal financial-AI infrastructure portfolio (2024).
